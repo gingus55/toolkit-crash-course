@@ -13,7 +13,7 @@ export default function ReservationCard({ name, index }) {
         dispatch(removeReservation(index));
         dispatch(
           addCustomer({
-            id: uuid,
+            id: uuid(),
             name,
             food: [],
           })
